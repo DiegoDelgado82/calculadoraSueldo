@@ -37,27 +37,38 @@
 
     <main>
            
-      <section class="container-fluid ">
-        <h1 class="my-4 text-center">Calculadora de sueldo</h1>
+      <section class="container-fluid text-center ">
+        <img class="w-25" src="./img/logo_resp.png" alt="Logo e-data"
+          />
+        <h1 class="my-4 text-center bg-info-subtle  rounded-2">Calculadora de sueldo</h1>
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-2 col--gap-lg mb-2 py-2 text-center">
+          <div class="col-xs-12 col-sm-6 col-lg-12 col--gap-lg mb-2 py-2 text-center">
             
             <div class="mb-2">
-              <label for="sueldoBasico">Sueldo Básico:</label>
-              <input type="number" id="sueldoBasico" min="1" placeholder="571490" value=571490>
-          </div>
+              <label for="sueldoBasico">Sueldo Básico:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="number" id="sueldoBasico" min="1" placeholder="571490">
+           </div>
       
-          <div class="mb-2">
-              <label for="horasDomingo">Horas Domingo:</label>
-              <input type="number" id="horasDomingo" placeholder="Ingrese las horas del domingo">
-          </div>
+            <div class="mb-2">
+                <label for="horasDomingo">Horas Domingo:&nbsp;</label>
+                <input type="number" id="horasDomingo" placeholder="Ingrese las horas del domingo">
+            </div>
       
-          <div class="mb-2">
-              <label for="horasFeriado">Horas Feriado:</label>
-              <input type="number" id="horasFeriado" placeholder="Ingrese las horas de feriado">
-          </div>
+            <div class="mb-2">
+                <label for="horasFeriado">Horas Feriado:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="horasFeriado" placeholder="Ingrese las horas de feriado">
+            </div>
 
-          <button onclick="calcularSueldo()" class="btn-info bg-info " id="calcular">Calcular</button>
+            <div class="mb-2">
+              <label for="horasNocturnas">Horas Nocturnas:</label>
+              <input type="number" id="horasNocturnas" placeholder="Ingrese las horas nocturnas">
+            </div>
+            <div class="mb-2">
+              <label for="comisiones">Comisiones:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="number" id="comisiones" placeholder="Ingrese las comisiones">
+            </div>
+
+            <button onclick="calcularSueldo()" class="col-6 m-3  p-2 border-1 rounded-2 bg-info" id="calcular">Calcular</button>
 
           </div>
    
@@ -67,12 +78,12 @@
       </section>
       
       <section class="container-fluid">
-        <h2 class="my-4 text-center">Total Neto a cobrar aprox <br> (sin contar horas nocturnas)</h2>
+        <h2 class="my-4 text-center">Total Neto a cobrar aproximadamente</h2>
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-2 col--gap-lg mb-2 py-2 text-center">
+          <div class="col-xs-12 col-sm-6 col-lg-12 col--gap-lg mb-2 py-2 text-center">
             
             <div class="mb-2">
-              <h1 class="bg-info"id="sueldo">-</h1>
+              <h1 class="bg-info  rounded-2"id="sueldo">-</h1>
               
           </div>
 
