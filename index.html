@@ -63,10 +63,7 @@
               <label for="horasNocturnas">Horas Nocturnas:</label>
               <input type="number" id="horasNocturnas" placeholder="Ingrese las horas nocturnas">
             </div>
-            <div class="mb-2">
-              <label for="comisiones">Comisiones:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="number" id="comisiones" placeholder="Ingrese las comisiones">
-            </div>
+            
 
             <button onclick="calcularSueldo()" class="col-6 m-3  p-2 border-1 rounded-2 bg-info" id="calcular">Calcular</button>
 
@@ -78,6 +75,21 @@
       </section>
       
       <section class="container-fluid">
+
+        <h4 class="my-4 text-center">Total Bruto a cobrar aproximadamente</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-12 col--gap-lg mb-2 py-2 text-center">
+            
+            <div class="mb-2">
+              <h4 class="bg-info  rounded-2"id="bruto">-</h4>
+              
+          </div>
+
+   
+        </div>
+
+
+
         <h2 class="my-4 text-center">Total Neto a cobrar aproximadamente</h2>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-lg-12 col--gap-lg mb-2 py-2 text-center">
@@ -89,6 +101,7 @@
 
    
         </div>
+        
 
        
       </section>
